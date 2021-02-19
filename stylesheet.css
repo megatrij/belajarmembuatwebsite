@@ -5,6 +5,7 @@
 body {
   margin: 0;
   font-family: "Avenir Next";
+  display: block;
 }
 
 li {
@@ -125,19 +126,12 @@ header {
   position: relative;
 }
 
-.destination-icon p {
-  position: absolute;
-  top: 44%;
-  width: 100%;
-  color: white;
-}
-
 .destination-body {
-  width: 80%;
+  width: 100%;
   display: inline-block;
-  margin-top: 20px;
   font-size: 15px;
   color: #b3aeb5;
+  margin-bottom: 10px;
 }
 
 .destination-body:hover {
@@ -163,7 +157,7 @@ footer {
   width: 100%;
   background-color: #2f5167;
   color: #fff;
-  height: 200px;
+  height: 170px;
   padding: 20px;
 }
 
@@ -177,5 +171,58 @@ footer {
 
 .about-submit input {
   border: 1px solid #dee7ec;
-  border-radius: 3px;
+  border-radius: 4px;
+}
+
+.email {
+  position: absolute;
+  width: 100px;
+}
+
+.submit {
+  margin: 5px 0;
+  padding: 5px 5px;
+  background-color: #5dca88;
+  cursor: pointer;
+  box-shadow: 0 5px #1a7940;
+}
+
+.submit:active {
+  position: relative;
+  top: 5px;
+  box-shadow: none;
+}
+
+.flex-destinations {
+  display: flex;
+}
+.flex-destinations icon {
+  flex: auto;
+}
+
+/* Layout untuk Tablet */
+@media (max-width: 1000px) {
+  .flex-destinations {
+    flex-wrap: wrap;
+  }
+  .flex-destinations icon {
+    width: 50%;
+  }
+}
+
+/* Layout untuk Smartphone */
+/* Tetapkan lebar breakpoint ke 670px dan di bawahnya ke media query */
+@media (max-width: 670px) {
+  /* Tetapkan flex-direction milik .flex-list */
+  .flex-destinations {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  
+  /* Tetapkan margin dari .flex-list li ke 0 auto */
+  .flex-destinations icon {
+    margin: 0 auto;
+  }
+  
 }
