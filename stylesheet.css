@@ -176,7 +176,6 @@ footer {
 
 .email {
   position: absolute;
-  width: 100px;
 }
 
 .submit {
@@ -191,38 +190,4 @@ footer {
   position: relative;
   top: 5px;
   box-shadow: none;
-}
-
-.flex-destinations {
-  display: flex;
-}
-.flex-destinations icon {
-  flex: auto;
-}
-
-/* Layout untuk Tablet */
-@media (max-width: 1000px) {
-  .flex-destinations {
-    flex-wrap: wrap;
-  }
-  .flex-destinations icon {
-    width: 50%;
-  }
-}
-
-/* Layout untuk Smartphone */
-/* Tetapkan lebar breakpoint ke 670px dan di bawahnya ke media query */
-@media (max-width: 670px) {
-  /* Tetapkan flex-direction milik .flex-list */
-  .flex-destinations {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
-  
-  /* Tetapkan margin dari .flex-list li ke 0 auto */
-  .flex-destinations icon {
-    margin: 0 auto;
-  }
-  
 }
